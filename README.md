@@ -3,18 +3,13 @@
 
 <br>
 
-- Quick start guide for Angular Project in 2023
+Quick start guide for Angular Project in 2023
 
-<br>
-
-
-<br>
 <br>
 <br>
 
 ***
 
-<br>
 <br>
 <br>
 
@@ -145,7 +140,7 @@
 
     # update version in package.jspn
     # update npm commands if you want in package.json
-    
+
 ```
 
 - build modules, components, services
