@@ -85,7 +85,7 @@
     # rename README > README-NG and README-2 > README
 
     # update git-ingore file
-    # node_modules, vs-code, npm, angular
+    # node_modules, vs-code, npm, angular, dist
 
     # add git-commit file
     $ . git-commit.sh
