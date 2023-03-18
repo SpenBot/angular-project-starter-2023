@@ -19,6 +19,9 @@
 <br>
 
 
+
+
+
 ## TODO
 
 - [-] favicon
@@ -34,6 +37,10 @@
 - [-] webpack
 - [-] npm commands
 - [-] backend calls
+
+
+
+
 
 ## INSTALLS
 
@@ -102,6 +109,10 @@
 ```sh
 
     $ ng serve --port 4200 --open
+    $ npm run start
+
+    $ ng build
+    $ npm run build
 
 ```
 
@@ -131,6 +142,10 @@
     # update angular.json styles  
     # test by importing module into app.module, and add component
 
+
+    # update version in package.jspn
+    # update npm commands if you want in package.json
+    
 ```
 
 - build modules, components, services
@@ -142,6 +157,10 @@
     # delete spec files
 
     # build components and services
+    $ ng generate component core/home
+    # delete component and spec files, remove from module
+
+    # build components and services
     $ ng generate component modules/user-module/user-landing
     $ ng generate component modules/user-module/user-view
     $ ng generate component modules/user-module/user-edit
@@ -151,6 +170,8 @@
     # add components to routes
 
 ```
+
+
 
 
 ## PROJECT STRUCTURE

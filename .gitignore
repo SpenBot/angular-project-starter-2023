@@ -11,8 +11,8 @@ node_modules/
 .angular
 
 # Dist 
-/dist
+dist
 
 # dotenv environment variables file
-.env
-.env.test
+# .env
+# .env.test
