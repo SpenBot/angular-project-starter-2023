@@ -3,7 +3,7 @@
 
 <br>
 
-- Quick startup guide for Angular Project in 2023
+- Quick start guide for Angular Project in 2023
 
 <br>
 
@@ -19,7 +19,21 @@
 <br>
 
 
+## TODO
 
+- [-] favicon
+- [-] what do all these config files do?
+- [-] environments
+- [-] shared modules
+- [-] how exactly to do models?
+- [-] enums, how to and where to put them?
+- [-] ps1 file?
+- [-] how do you point to a backend?
+- [-] environment variables?
+- [-] global styling
+- [-] webpack
+- [-] npm commands
+- [-] backend calls
 
 ## INSTALLS
 
@@ -53,6 +67,7 @@
 <br>
 
 
+
 ## SET UP
 
 ``` sh
@@ -73,7 +88,85 @@
     # node_modules, vs-code, npm, angular
 
     # add git-commit file
+    $ . git-commit.sh
+
+```
+
+<br>
+
+
+
+
+## RUN AND BUILD
+
+```sh
+
+    $ ng serve --port 4200 --open
+
+```
+
+<br>
+
+
+
+
+## SET UP
+
+- remove from `app.component.html` and `app.component.ts`
+- delete `.spec` files
+- set `strict: false` in `tsconfig.json`
+- add `"strictPropertyInitialization": false` in `tsconfig.json`
+- delete `test.js` and `karma.conf.js` files if you want
+
+```sh
+    
+    # install bootstrap
+    $ npm install bootstrap@4.6.2 --save --force
+    # update styles.scss with bootstrap import
+    # test <button type="button" class="btn btn-primary">Bootstrap</button>
+    
+    # install prime-ng
+    $ npm install primeng@14.2.2 --save
+    $ npm install primeicons@4.1.0 --save
+    # update angular.json styles  
+    # test by importing module into app.module, and add component
+
+```
+
+- build modules, components, services
+
+```sh
+
+    # build lazy loaded modules
+    $ ng generate module user-module --route user --module app.module
+    # delete spec files
+
+    # build components and services
+    $ ng generate component modules/user-module/user-landing
+    $ ng generate component modules/user-module/user-view
+    $ ng generate component modules/user-module/user-edit
+    $ ng generate service modeuls/user-module/user-service # module-wide service
+    # delete component and spec files, remove from module
+
+    # add components to routes
 
 ```
 
 
+## PROJECT STRUCTURE
+
+- app
+    - core
+        - home
+        - navbar
+        - breadcrumbs
+    - modules
+        - user-module
+            - user-landing
+            - user-view
+            - user-edit
+    - data
+        - dummy.service.ts
+    - models
+    - shared
+        - (components + services)
