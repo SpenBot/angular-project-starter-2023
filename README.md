@@ -1,11 +1,9 @@
 # angular-project-starter-2023
 
-
 <br>
 
 Quick start guide for Angular Project in 2023
 
-<br>
 <br>
 
 ***
@@ -32,7 +30,11 @@ Quick start guide for Angular Project in 2023
 - [-] webpack
 - [-] npm commands
 - [-] backend calls
+- [-] why is default /#?
+- [-] how do you make the default like the home module?
 
+
+<br>
 
 
 
@@ -173,7 +175,7 @@ Quick start guide for Angular Project in 2023
 
 - app
     - core
-        - home
+        - home (should this be a module?)
         - navbar
         - breadcrumbs
     - modules
@@ -183,6 +185,10 @@ Quick start guide for Angular Project in 2023
             - user-edit
     - data
         - dummy.service.ts
-    - models
+        - models
+        - enums
+    - http
+        - services
     - shared
-        - (components + services)
+        - (components like reusable tables and shit)
+        - (services like sorts and shit)
