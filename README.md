@@ -33,7 +33,6 @@ Quick start guide for Angular Project in 2023
 - [-] why is default /#?
 - [-] how do you make the default like the home module?
 
-
 <br>
 
 
